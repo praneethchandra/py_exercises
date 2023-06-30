@@ -18,3 +18,8 @@ morewords = ['why', 'are', 'you', 'not',
 
 word_counts.update(morewords)
 
+a = Counter(words)
+b = Counter(morewords)
+
+print( a+b )
+print ( a-b )
