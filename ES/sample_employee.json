@@ -1,0 +1,111 @@
+{
+    "employee": {
+        "designation": "CEO",
+        "address": {
+            "name": "John Doe",
+            "street name": "10 Doe Street",
+            "city": "Maui",
+            "state": "Hawaii",
+            "zipcode": 96713
+        },
+        "paycheck": [
+            {
+                "type": "MONTHLY",
+                "amount": {
+                    "value": 100,
+                    "currency": "USD",
+                    "convertedToValue": 150,
+                    "convertedToCurrency": "EUR"
+                }
+            },
+            {
+                "type": "GRANT_STOCK",
+                "amount": {
+                    "value": 10000,
+                    "currency": "USD",
+                    "convertedToValue": 15000,
+                    "convertedToCurrency": "EUR"
+                }
+            },
+            {
+                "type": "GRANT_BONUS",
+                "amount": {
+                    "value": 1000,
+                    "currency": "USD",
+                    "convertedToValue": 1500,
+                    "convertedToCurrency": "EUR"
+                }
+            },
+            {
+                "type": "NEGATE_CHECK",
+                "amount": {
+                    "value": -10,
+                    "currency": "USD",
+                    "convertedToValue": -15,
+                    "convertedToCurrency": "EUR"
+                },
+                "split": [
+                    {
+                        "type": "MONTHLY",
+                        "amount": {
+                            "value": 2,
+                            "currency": "USD",
+                            "convertedToValue": 5,
+                            "convertedToCurrency": "EUR"
+                        }
+                    },
+                    {
+                        "type": "GRANT_STOCK",
+                        "amount": {
+                            "value": 4,
+                            "currency": "USD",
+                            "convertedToValue": 8,
+                            "convertedToCurrency": "EUR"
+                        }
+                    },
+                    {
+                        "type": "GRANT_BONUS",
+                        "amount": {
+                            "value": 4,
+                            "currency": "USD",
+                            "convertedToValue": 8,
+                            "convertedToCurrency": "EUR"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "DISPUTE_CHECK",
+                "amount": {
+                    "value": -5,
+                    "currency": "USD",
+                    "convertedToValue": -7.5,
+                    "convertedToCurrency": "EUR"
+                }
+            }
+        ],
+        "timeOff": {
+            "workHours": 100,
+            "floatingHours": 20,
+            "pendingHours": 1000
+        },
+        "projects": {
+            "summary": {
+                "count": 10,
+                "completed": 6,
+                "pending": 2,
+                "cancelled": 2
+            },
+            "project": [
+                {
+                    "name": "PROJECT1",
+                    "description": "PROJECT1"
+                },
+                {
+                    "name": "PROJECT2",
+                    "description": "PROJECT2"
+                }
+            ]
+        }
+    }
+}
