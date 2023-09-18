@@ -12,9 +12,20 @@ es = Elasticsearch(
     ssl_show_warn=False
 )
 
+
 for i in range(0,6):
     index_name = "test-index" + str(datetime.now().year) + str(datetime.now().month-i)
     print(index_name)
+    es.indices.create(index=index_name, mappings={
+      "properties": {
+        "text": {
+        "type": "dense_vector",
+        "dims": 384,
+        "similarity": "cosine",
+        "index": True
+        }
+    }
+    })
     
     ceo_res = es.index(index=index_name, id=i, body=generate_ceo())
     print(ceo_res['result'])
