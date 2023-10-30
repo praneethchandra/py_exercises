@@ -1,8 +1,12 @@
+from datetime import datetime
 import json
 from urllib.request import urlopen
 from elasticsearch import Elasticsearch
 from sentence_transformers import SentenceTransformer
 import torch
+from random_employee import generate_ceo
+from random_employee import generate_cto
+from random_employee import generate_employee
 
 
 class Book:
@@ -33,7 +37,7 @@ class BookSearch:
         # Define the mapping
         mapping = {
             "properties": {
-                "title_vector": {
+                "employee_vector": {
                     "type": "dense_vector",
                     "dims": 384,
                     "index": "true",
@@ -42,20 +46,21 @@ class BookSearch:
             }
         }
 
-        if not self.es.indices.exists(index='book_index'):
-            # Create the index
-            self.es.indices.create(index='book_index', mappings=mapping)
-            url = "https://raw.githubusercontent.com/elastic/elasticsearch-labs/main/notebooks/search/data.json"
-            response = urlopen(url)
-            books = json.loads(response.read())
+        for i in range(0,6):
+            index_name = "test-index-" + str(datetime.now().year) + str(datetime.now().month-i)
+            print('=========>', index_name)
+            if not self.es.indices.exists(index=index_name):
+                self.es.indices.create(index=index_name, mappings=mapping)
+        
+                ceo_res = self.es.index(index=index_name, id=i, body=generate_ceo())
+                print(ceo_res['result'])
 
-            actions = []
-            for book in books:
-                actions.append({"index": {"_index": "book_index"}})
-                # Transforming the title into an embedding using the model
-                book["title_vector"] = self.model.encode(book["title"]).tolist()
-                actions.append(book)
-            self.es.bulk(index="book_index", operations=actions)
+                cto_res = self.es.index(index=index_name, id=i+1, body=generate_cto())
+                print(cto_res['result'])
+
+                for j in range(0,50):
+                    emp_res = self.es.index(index=index_name, id=j+2, body=generate_employee())
+                    print(emp_res['result'])        
 
 
     def pretty_response(self, response):
@@ -73,19 +78,19 @@ class BookSearch:
 
 
     def semantic_search(self):
-        response = self.es.knn_search(index="book_index", knn={
-            "field": "title_vector",
-            "query_vector": self.model.encode("Best javascript books?"),
+        response = self.es.search(index="test-index-20238", knn={
+            "field": "employee_vector",
+            "query_vector": self.model.encode("How many designations are there?"),
             "k": 10,
             "num_candidates": 100
         })
-        # print(response)
+        print(response)
         self.pretty_response(response)
 
     def semantic_search_filter(self):
-        response = self.es.knn_search(index="book_index", knn={
-            "field": "title_vector",
-            "query_vector": self.model.encode("Best javascript books?"),
+        response = self.es.search(index="test-index-20238", knn={
+            "field": "employee_vector",
+            "query_vector": self.model.encode("What is the role of a CEO?"),
             "k": 10,
             "num_candidates": 100,
             "filter": {
@@ -99,9 +104,9 @@ class BookSearch:
 
 
     def semantic_search_adv_filters(self):
-        response = self.es.knn_search(index="book_index", knn={
+        response = self.es.search(index="test-index-20238", knn={
             "field": "title_vector",
-            "query_vector": self.model.encode("Best javascript books?"),
+            "query_vector": self.model.encode("What is the role of a CEO?"),
             "k": 10,
             "num_candidates": 100,
             "filter": {
@@ -126,7 +131,7 @@ class BookSearch:
         self.pretty_response(response)
 
     def semantic_hybrid_search(self):
-        response = self.es.search(index="book_index", knn={
+        response = self.es.search(index="book_index", query={
             "query": {
                 "match": {
                     "summary": "python"
@@ -146,19 +151,21 @@ class BookSearch:
                 }
             }
         })
+        # print(response)
         self.pretty_response(response)
+
 
 
 def main():
     bookSearch = BookSearch()
     bookSearch.insert_data()
-    print('====================semantic_search')
+    print('====================')
     bookSearch.semantic_search()
-    # print('====================semantic_search_filter')
+    # print('====================')
     # bookSearch.semantic_search_filter()
-    # print('====================semantic_search_adv_filters')
+    # print('====================')
     # bookSearch.semantic_search_adv_filters()
-    # print('====================semantic_hybrid_search')
+    # print('====================')
     # bookSearch.semantic_hybrid_search()
 
 if __name__ == '__main__':
