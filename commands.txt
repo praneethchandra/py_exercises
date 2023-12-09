@@ -1,0 +1,951 @@
+    1  ls
+    2  pwd
+    3  ls
+    4  sudo apt update
+    5  apt list --upgradable
+    6  sudo apt upgrade
+    7  python3
+    8  exit
+    9  ls
+   10  pwd
+   11  python
+   12  python3
+   13  exit
+   14  sudo apt update
+   15  exit
+   16  sudo apt update
+   17  sudo apt full-upgrade
+   18  sudo apt update
+   19  sudo apt install x11-apps
+   20  xeyes &
+   21  xcalc
+   22  sudo apt install octave
+   23  octave --gui &
+   24  curl https://get.docker.com | sh
+   25  distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+   26  curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add –
+   27  curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add
+   28  curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+   29  sudo apt-get update
+   30  sudo apt-get install -y nvidia-docker2
+   31  sudo service docker stop
+   32  sudo service docker start
+   33  docker run –gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
+   34  git
+   35  git clone https://github.com/NVIDIA/data-science-stack
+   36  ls
+   37  cd data-science-stack/
+   38  ./data-science-stack setup-system
+   39  ./data-science-stack list
+   40  ./data-science-stack build-container
+   41  ./data-science-stack run-container
+   42  /data-science-stack run-container
+   43  sudo ./data-science-stack run-container
+   44  docker login
+   45  sudo docker login
+   46  sudo ./data-science-stack run-container
+   47  cd
+   48  ls
+   49  cd Projects/
+   50  ls
+   51  mkdir Python
+   52  cd Python/
+   53  ls
+   54  conda install
+   55  sudo apt install conda
+   56  sudo apt-get install python-pip python-dev libmysqlclient-dev
+   57  sudo apt install python3-pip python3-dev libmysqlclient-dev
+   58  vim requirements.txt
+   59  pip install -r requirements.txt 
+   60  python3
+   61  exit
+   62  ifconfig
+   63  sudo apt install net-tools
+   64  ls
+   65  exit
+   66  ifconfig
+   67  sudo apt install net-tools
+   68  ifconfig
+   69  ls
+   70  cd Pra
+   71  cd Projects/
+   72  ls
+   73  cd Python/
+   74  ls
+   75  vim requirements.txt 
+   76  sudo apt update
+   77  sudo su -
+   78  cd ..
+   79  ls
+   80  cd ..
+   81  ls
+   82  mkdir py
+   83  cd py/
+   84  mkdir algos_ds
+   85  cd algos_ds/
+   86  python3 -m venv env
+   87  sudo apt install python3.8-venv
+   88  exit
+   89  sudo su -
+   90  exit
+   91  sudo apt update && sudo apt upgrade
+   92  cd py/
+   93  ls
+   94  cd algos_ds/
+   95  ls
+   96  cd env/
+   97  ls
+   98  cd bin/
+   99  ls
+  100  cd ..
+  101  rm -rf algos_des
+  102  rm -rf algos_ds
+  103  ls
+  104  python3 -m venv algos_ds
+  105  sudo apt install python3.8-venv
+  106  python3 -m venv algos_ds
+  107  cd algos_ds/
+  108  source  bin/activate
+  109  ls
+  110  mkdir src
+  111  deactivate
+  112  exit
+  113  cat /etc/lsb-release 
+  114  cat /proc/version 
+  115  ls
+  116  wget https://code.visualstudio.com/download#
+  117  ls
+  118  rm download 
+  119  ls
+  120  wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+  121  ls
+  122  rm wget-log 
+  123  ls
+  124  sudo apt install ./code_1.74.2-1671533413_amd64.deb 
+  125  code
+  126  ls
+  127  exit
+  128  sudo snap install pycharm-community --classic
+  129  ls
+  130  tar -xzvf pycharm-community-2022.3.1-aarch64.tar.gz 
+  131  ls
+  132  cd pycharm-community-2022.3.1/
+  133  ls
+  134  cd bin/
+  135  ls
+  136  ./pycharm.sh 
+  137  cd
+  138  sudo apt install openjdk
+  139  sudo apt install java-sdk
+  140  sudo apt install openjdk-17-jdk
+  141  java
+  142  java -version
+  143  cd pycharm-community-2022.3.1/
+  144  cd bin/
+  145  ./pycharm.sh 
+  146  exit
+  147  ls
+  148  mkdir C
+  149  cd C/
+  150  vim main.c
+  151  exit
+  152  ls
+  153  cd pycharm-community-2022.3.1/
+  154  cd bin/
+  155  ./pycharm.sh 
+  156  exit
+  157  cd C
+  158  ls
+  159  ./passing 
+  160  vim passing
+  161  vim passing.c 
+  162  make pass
+  163  make passin
+  164  make passing
+  165  ./passing 
+  166  vim passing.c 
+  167  make passing
+  168  ./passing 
+  169  cd pycharm-community-2022.3.1/
+  170  cd bin/
+  171  ./pycharm.sh 
+  172  git
+  173  ls
+  174  npm
+  175  which npm
+  176  ls
+  177  mkdir openai
+  178  cd openai/
+  179  git clone git@github.com:praneethchandra/openai-quickstart-node.git
+  180  ls -al ~/.ssh
+  181  ssh-keygen -t ed25519 -C "praneethchandra@gmail.com"
+  182  eval "$(ssh-agent -s)"
+  183  ssh-add ~/.ssh/id_ed25519
+  184  cat ~/.ssh/id_ed25519
+  185  cat ~/.ssh/id_ed25519.pub 
+  186  ssh -T git@github.com
+  187  git clone git@github.com:praneethchandra/openai-quickstart-node.git
+  188  ls
+  189  cd openai-quickstart-node/
+  190  ls
+  191  cp .env.example .env
+  192  npm install
+  193  sudo apt update npm
+  194  sudo apt upgrade npm
+  195  npm run dev
+  196  sudo apt install curl
+  197  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+  198  source ~/.profile
+  199  nvm install node
+  200  npm run dev
+  201  cd ..
+  202  git clone git@github.com:praneethchandra/openai-quickstart-python.git
+  203  cd openai-quickstart-python/
+  204  ls
+  205  python
+  206  python3
+  207  python3 -m venv venv
+  208  . venv/bin/activate
+  209  pip install -r requirements.txt 
+  210  cp .env.example .env.example 
+  211  cp .env.example .env
+  212  vim .env
+  213  flask run
+  214  exit
+  215  cd openai/openai-quickstart-node/
+  216  cat README.md 
+  217  cd ..
+  218  vim openai.txt
+  219  cd openai-quickstart-node/
+  220  vim .env
+  221  cat .env
+  222  exit
+  223  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  224  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+  225  sudo apt-get update
+  226  sudo apt-get install -y mongodb-org
+  227  sudo systemctl start mongod
+  228  sudo systemctl daemon-reload
+  229  which mongodb
+  230  which mongod
+  231  mongod
+  232  ls
+  233  mkdir D
+  234  ls
+  235  rm -rf D
+  236  mkdir DB
+  237  cd DB
+  238  ls
+  239  sudo apt-get install libcurl4 openssl liblzma5
+  240  wget https://fastdl.mongodb.org/linux/mongodb-linux-aarch64-ubuntu2004-6.0.4.tgz
+  241  ls
+  242  tar -xzvf mongodb-linux-aarch64-ubuntu2004-6.0.4.tgz 
+  243  cd mongodb-linux-aarch64-ubuntu2004-6.0.4/
+  244  ls
+  245  sudo ln -s  /path/to/the/mongodb-directory/bin/* /usr/local/bin/
+  246  ls
+  247  ls -al
+  248  cd ..
+  249  ls
+  250  sudo ln -s  /home/pgone/DB/mongodb-linux-aarch64-ubuntu2004-6.0.4/bin/* /usr/local/bin/
+  251  sudo apt-get install -y mongodb-mongosh
+  252  sudo mkdir -p /var/lib/mongo
+  253  sudo chown `whoami` /var/lib/mongo
+  254  sudo chown `whoami` /var/log/mongodb
+  255  mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork
+  256  ./mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork
+  257  which mongod
+  258  mongod
+  259  cd mongodb-linux-aarch64-ubuntu2004-6.0.4/bin/
+  260  ls
+  261  ls -al
+  262  ./mongod 
+  263  cd ..
+  264  ls
+  265  sudo unlink -s  /home/pgone/DB/mongodb-linux-aarch64-ubuntu2004-6.0.4/bin/* /usr/local/bin/
+  266  sudo unlink /home/pgone/DB/mongodb-linux-aarch64-ubuntu2004-6.0.4/bin/*
+  267  sudo unlink /home/pgone/DB/mongodb-linux-aarch64-ubuntu2004-6.0.4/bin/
+  268  ls
+  269  rm -rf mongodb-linux-aarch64-ubuntu2004-6.0.4
+  270  ls
+  271  sudo systemctl start mongod.service
+  272  sudo apt update
+  273  sudo apt install postgresql postgresql-contrib
+  274  psql --version
+  275  sudo service postgresql status
+  276  sudo service postgresql start
+  277  sudo passwd postgres
+  278  sudo -u postgres psql
+  279  sudo apt-get install -y mongodb-org
+  280  mongod --version
+  281  which mongod
+  282  sudo apt autoremove
+  283  sudo apt-get install -y mongodb-org
+  284  sudo apt-get update
+  285  sudo apt erase mongodb-org
+  286  sudo apt uninstall -y mongodb-org
+  287  sudo apt-get remove mongodb-org
+  288  sudo apt update
+  289  wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+  290  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+  291  sudo apt-get update
+  292  sudo apt-get install -y mongodb-org
+  293  mongod --version
+  294  which mongod
+  295  sudo mongod --version
+  296  ls
+  297  sudo mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork
+  298  sudo mongosh
+  299  ps -e | grep 'mongod'
+  300  sudo mongosh
+  301  history
+  302  history | tee commands.txt
+  303  ls
+  304  mv commands.txt ~/
+  305  sudo mongosh
+  306  ls
+  307  cd ..
+  308  ls
+  309  cd py
+  310  ls
+  311  python3 -m venv db_m
+  312  . db_m/bin/activate
+  313  cd db_m/
+  314  ls
+  315  pip install pymongo==3.11.2
+  316  python
+  317  deactivate
+  318  exit
+  319  cd py
+  320  ls
+  321  cd pyspark/
+  322  ls
+  323  . bin/activate
+  324  jupyter notebook
+  325  deactivate
+  326  exit
+  327  ls
+  328  cd py
+  329  mkdir dj
+  330  rm -rf dj
+  331  python3 -m venv dj
+  332  . dj/bin/activate
+  333  cd dj/
+  334  ls
+  335  pip install django djangorestframework django-cors-headers
+  336  ls
+  337  django-admin startproject react_proj
+  338  cd react_proj/
+  339  ls
+  340  vim react_proj/settings.py 
+  341  django-admin startapp students
+  342  cd ..
+  343  ls
+  344  ls react_proj/
+  345  ls
+  346  ls react_proj/
+  347  pip install pymongo[snappy,gssapi,src,tls]
+  348  pip install dnspython
+  349  ls
+  350  cd react_proj/
+  351  ls
+  352  python manage.py makemigrations
+  353  python manage.py migrate
+  354  python manage.py makemigrations --empty --name students students
+  355  ls
+  356  cd students/migrations/
+  357  ls
+  358  vim 0002_students.py 
+  359  vim __init__.py 
+  360  ls
+  361  vim 0001_initial.py 
+  362  vim 0002_students.py 
+  363  cd ..
+  364  ;s
+  365  ls
+  366  python manage.py migrate
+  367  python manage.py runserver
+  368  exit
+  369  cd py/dj
+  370  ls
+  371  . bin/activate
+  372  npx
+  373  clear
+  374  ls
+  375  cd react_proj/
+  376  ls
+  377  npx create-react-app students-fe
+  378  cd students-fe/
+  379  ls
+  380  npm install bootstrap reactstrap axios --save
+  381  ls
+  382  npm start
+  383  exit
+  384  ps -aux | grep mongo
+  385  mongod
+  386  ls
+  387  vim commands.txt 
+  388  sudo mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --fork
+  389  vim commands.txt 
+  390  sudo mongosh
+  391  cd py/dj2/
+  392  ls
+  393  cd report/
+  394  python manage.py startapp dashboard
+  395  cd ..
+  396  . bin/activate
+  397  cd report/
+  398  python manage.py startapp dashboard
+  399  sudo mongosh
+  400  mongosh "mongodb+srv://atlascluster.wonoude.mongodb.net/myFirstDatabase" --apiVersion 1 --username pkgone
+  401  mongosh "mongodb+srv://atlascluster.wonoude.mongodb.net/ecommerce" --apiVersion 1 --username pkgone
+  402  mongoimport --uri "mongodb+srv://pkgone:Test12345678@atlascluster.wonoude.mongodb.net/ecommerce?retryWrites=true&w=majority" --collection transactions --drop --type csv --headerline --file data.csv
+  403  mongoimport --uri "mongodb+srv://pkgone:Test12345678@atlascluster.wonoude.mongodb.net/ecommerce?retryWrites=true&w=majority" --collection marketing --drop --type csv --headerline --file marketing_data.json
+  404  mongoimport --uri "mongodb+srv://pkgone:Test12345678@atlascluster.wonoude.mongodb.net/ecommerce?retryWrites=true&w=majority" --collection marketing --drop --type json --headerline --file marketing_data.json
+  405  mongoimport --uri "mongodb+srv://pkgone:Test12345678@atlascluster.wonoude.mongodb.net/ecommerce?retryWrites=true&w=majority" --collection marketing --drop --type json --file marketing_data.json
+  406  mongoimport --uri "mongodb+srv://pkgone:Test12345678@atlascluster.wonoude.mongodb.net/ecommerce?retryWrites=true&w=majority" --collection marketing --drop --jsonArray marketing_data.json
+  407  mongosh "mongodb+srv://atlascluster.wonoude.mongodb.net/ecommerce" --apiVersion 1 --username pkgone
+  408  deactivate
+  409  exit
+  410  clear
+  411  ls
+  412  cd py
+  413  sl
+  414  ls
+  415  cd dj/
+  416  ls
+  417  cd react_proj/
+  418  ls
+  419  cd ..
+  420  . bin/activate
+  421  pip install mongoengine
+  422  pip install djongo
+  423  ls
+  424  cd react_proj/
+  425  python manage.py migrate
+  426  deactivate
+  427  cd ..
+  428  ls
+  429  python3 -m venv dj2
+  430  cd dj
+  431  cd ..
+  432  cd dj2/
+  433  ls
+  434  . bin/activate
+  435  python -m pip install Django
+  436  django-admin startproject report
+  437  cd report/
+  438  ls
+  439  python manage.py report/
+  440  python manage.py runserver
+  441  deactivate
+  442  exit
+  443  ls
+  444  mkdir web
+  445  ls
+  446  rm -rf web
+  447  mkdir js
+  448  cd js/
+  449  ls
+  450  unzip javascript-basic-projects-master.zip 
+  451  ls
+  452  rm javascript-basic-projects-master
+  453  rm javascript-basic-projects-master.zip
+  454  ls
+  455  exit
+  456  ls
+  457  cd py
+  458  ls
+  459  cd dj2/
+  460  ls
+  461  cd ..
+  462  ls
+  463  python3 -m venv fl
+  464  . fl/bin/activate
+  465  ls
+  466  cd fl/
+  467  ls
+  468  pip install flask
+  469  ls
+  470  pip install Flask
+  471  export FLASK_APP=app
+  472  flask run
+  473  flask run --host=0.0.0.0
+  474  export FLASK_ENV=development
+  475  flask run --host=0.0.0.0
+  476  export FLASK_DE=app
+  477  export FLASK_DEBUG=app
+  478  flask run --host=0.0.0.0
+  479  flask --app app run
+  480  deactivate
+  481  exit
+  482  ls
+  483  cd py
+  484  cd fl/
+  485  . bin/activate
+  486  flask --app app run --debug
+  487  deactivate
+  488  exit
+  489  cd py/fl/
+  490  . bin/activate
+  491  python init_db.py 
+  492  deactivate
+  493  exit
+  494  java
+  495  java --version
+  496  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  497  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+  498  sudo apt-get update
+  499  sudo apt-get install jenkins
+  500  systemctl cat jenkins
+  501  sudo systemctl cat jenkins
+  502  sudo systemctl enable jenkins
+  503  sudo systemctl start jenkins
+  504  sudo -s
+  505  exit
+  506  pwd
+  507  ls
+  508  exit
+  509  ls
+  510  mkdir flink
+  511  ls
+  512  exit
+  513  ls
+  514  cd flo
+  515  ls
+  516  rm -rf pycharm-community-2022.3.1*
+  517  ls
+  518  rm -rf C DB PycharmProjects Rust Projects code_1.74.2-1671533413_amd64.deb data-science-stack js py
+  519  ls
+  520  rm code_1.74.2-1671533413_amd64.deb\:Zone.Identifier 
+  521  ls
+  522  pwd
+  523  df
+  524  df -h
+  525  wget http://mirrors.estointernet.in/apache/flink/flink-1.7.1/flink-1.7.1-bin-scala_2.11.tgz
+  526  wget https://dlcdn.apache.org/flink/flink-1.17.0/flink-1.17.0-bin-scala_2.12.tgz
+  527  curl -O https://dlcdn.apache.org/flink/flink-1.17.0/flink-1.17.0-bin-scala_2.12.tgz
+  528  wget https://dlcdn.apache.org/flink/flink-1.17.0/flink-1.17.0-bin-scala_2.12.tgz
+  529  wget https://downloads.apache.org/flink/flink-1.17.0/flink-1.17.0-bin-scala_2.12.tgz
+  530  ls
+  531  ls -al
+  532  tar -xzvf flink
+  533  tar -xzvf flink-1.17.0-bin-scala_2.12.tgz 
+  534  ls
+  535  rm -rf flink-1.17.0*
+  536  ls
+  537  wget https://downloads.apache.org/flink/flink-1.17.0/flink-1.17.0-bin-scala_2.12.tgz
+  538  tar -xzf flink-1.17.0-bin-scala_2.12.tgz 
+  539  cd flink-1.17.0/
+  540  ls
+  541  ./bin/start-cluster.sh 
+  542  ls
+  543  ps
+  544  ifconfig
+  545  ps -aux | grep cluster
+  546  ps -aux | grep flink
+  547  exit
+  548  ls
+  549  cd openai/
+  550  ls
+  551  cd openai-quickstart-
+  552  cd openai-quickstart-python/
+  553  ls
+  554  flask --app app run --debug
+  555  cd ..
+  556  ls
+  557  exit
+  558  ls
+  559  ps aux | grep flink
+  560  cd flink
+  561  ls
+  562  cd ..
+  563  cd flink-1.17.0/
+  564  ls
+  565  more README.txt 
+  566  ls
+  567  cd examples/
+  568  ls
+  569  cd ..
+  570  ls
+  571  more conf/flink-conf.yaml 
+  572  ls
+  573  cd bin/
+  574  ls
+  575  cd
+  576  cd flink
+  577  ls
+  578  cd real-time-live-streamlit-dashboard-python-main/
+  579  ls
+  580  python3.10 -m venv venv
+  581  python -m venv venv
+  582  python3 -m venv venv
+  583  ls
+  584  cd .
+  585  cd ..
+  586  ls
+  587  ls -al
+  588  sudo chown pgone real-time-live-streamlit-dashboard-python-main
+  589  ls -al
+  590  sudo chown pgone:pgone real-time-live-streamlit-dashboard-python-main
+  591  ls -al
+  592  cd real-time-live-streamlit-dashboard-python-main/
+  593  ls
+  594  ls -al
+  595  cd ..
+  596  sudo chown pgone:pgone -r real-time-live-streamlit-dashboard-python-main
+  597  man chown
+  598  sudo chown pgone:pgone -R real-time-live-streamlit-dashboard-python-main
+  599  cd real-time-live-streamlit-dashboard-python-main/
+  600  ls
+  601  ls -al
+  602  python3 -m venv venv
+  603  . venv/bin/activate
+  604  python -m pip install -r requirements.txt
+  605  python app.py 
+  606  streamlit run app.py
+  607  deactivate
+  608  ls
+  609  cd ..
+  610  ls
+  611  mv real-time-live-streamlit-dashboard-python-main test_stream
+  612  ls
+  613  cd test_stream/
+  614  ls
+  615  rm -rf venv
+  616  python3 -m venv venv
+  617  . venv/bin/activate
+  618  python -m pip install -r requirements.txt
+  619  streamlit run app.py
+  620  deactivate
+  621  cd
+  622  cd flink
+  623  ls
+  624  cd ..
+  625  mkdir streamlit
+  626  cd streamlit/
+  627  mkdir gpt
+  628  cd gpt/
+  629  python3 -m venv venv
+  630  . venv/bin/activate
+  631  python -m pip install -r requirements.txt 
+  632  rm -rf venv
+  633  deactivate
+  634  cd
+  635  VERSION=3.10.11
+  636  wget https://www.python.org/ftp/python/$VERSION/Python-$VERSION.tgz
+  637  tar -xf Python-$VERSION.tgz
+  638  cd  Python-$VERSION/
+  639  ./configure --enable-optimizations
+  640  make -j $(nproc)
+  641  sudo make altinstall
+  642  cd
+  643  cd flink/stre
+  644  cd streamlit/
+  645  ;ls
+  646  ls
+  647  cd gpt/
+  648  ls
+  649  python3.10 -m venv venv
+  650  . venv/bin/activate
+  651  python3.10 -m pip install -r requirements.txt 
+  652  python -m pip install -r requirements.txt 
+  653  deactivate
+  654  python3.10 -m venv venv
+  655  pw
+  656  pwd
+  657  ls
+  658  . venv/bin/activate
+  659  python -m pip install -r requirements
+  660  python -m pip install -r requirements.txt 
+  661  streamlit run app.py
+  662  sudo apt update && sudo apt upgrade -y
+  663  deactivate
+  664  sudo apt update && sudo apt upgrade -y
+  665  df -h
+  666  cd
+  667  ls
+  668  cd Python-3.10.11/
+  669  sudo apt update
+  670  sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+  671  ./configure --enable-optimizations
+  672  make -j $(nproc)
+  673  sudo make altinstall
+  674  python3.10
+  675  cd
+  676  cd streamlit/gpt/
+  677  ls
+  678  rm -rf venv
+  679  rm 'requirements copy.txt' 
+  680  ls
+  681  python3.10 -m venv venv
+  682  . venv/bin/activate
+  683  python -m pip install -r requirements.txt 
+  684  ls
+  685  streamlit run app.py 
+  686  ls
+  687  cd ..
+  688  cd gpt/
+  689  deactivate
+  690  cd ..
+  691  git clone git@github.com:praneethchandra/streamlit-gpt.git
+  692  ls
+  693  cd gpt/
+  694  ls
+  695  mv app.py requirements.txt ../streamlit-gpt/
+  696  cd ..
+  697  rm -rf gpt
+  698  cd streamlit-gpt/
+  699  ls
+  700  git add app.py requirements.txt README.md
+  701  touch README.md
+  702  git add app.py requirements.txt README.md
+  703  git commit -m "first basic working streamlit app"
+  704  '
+  705  git config --global user.email "praneethchandra@gmail.com"
+  706  git config --global user.name "pkgone"
+  707  git commit -m "first basic working streamlit app"
+  708  git push origin mainm
+  709  git push origin main
+  710  ls
+  711  mkdir files
+  712  git status
+  713  git add files/*
+  714  git commit -m "csv file to test init working app"
+  715  git reset files/techcrunch.csv:Zone.Identifier
+  716  git status
+  717  git commit -m "csv file to test init working app"
+  718  git push origin main
+  719  ls
+  720  python3.10 -m venv venv
+  721  . venv/bin/activate
+  722  python -m pip install -r requirements.txt 
+  723  ls
+  724  streamlit run app.py 
+  725  git status
+  726  pip freeze > requirements.txt 
+  727  ls -al
+  728  chown pgone:pgone app.py 
+  729  sudo chown pgone:pgone app.py 
+  730  ls -al
+  731  sudo chown pgone:pgone requirements.txt 
+  732  ls -al
+  733  pip freeze > requirements.txt 
+  734  cat requirements.txt 
+  735  git staus
+  736  git status
+  737  git add app.py requirements.txt 
+  738  git commit -m "Working with files/techcrunch file"
+  739  git push origin main
+  740  deactivate
+  741  exit
+  742  cd flink
+  743  ls
+  744  cd test_stream/
+  745  cat requirements.txt
+  746  exit
+  747  ls
+  748  cd streamlit/
+  749  git statusw
+  750  git status
+  751  ls
+  752  cd streamlit-gpt/
+  753  git status
+  754  git pull origin main
+  755  git status
+  756  git fetch origin
+  757  git branch fin_stock origin/fin_stock
+  758  git branhc
+  759  git branch
+  760  git checkout fin_stock
+  761  git status
+  762  cd ..
+  763  ls
+  764  cd ..
+  765  ls
+  766  git clone git@github.com:praneethchandra/dataanalysis.git
+  767  cd dataanalysis/
+  768  ;s
+  769  ls
+  770  pwe
+  771  pwd
+  772  sudo apt install awk
+  773  sudo apt-get update -y
+  774  sudo apt-get install gawk -y
+  775  sudo apt autoremove
+  776  ls
+  777  cd ..
+  778  ls
+  779  rm -rf dataanalysis
+  780  git clone git@github.com:praneethchandra/dataanalysis.git
+  781  cd dataanalysis/
+  782  ls
+  783  python3.10 -m venv venv
+  784  . venv/bin/activate
+  785  ls
+  786  cd openai/
+  787  ls
+  788  cd ..
+  789  ls
+  790  git clone git@github.com:praneethchandra/privateGPT.git
+  791  ls
+  792  cd privateGPT/
+  793  ls
+  794  python3 -m venv venv
+  795  source venv/bin/activate
+  796  python3 -m pip install -r requirements.txt 
+  797  ls
+  798  ls ../../
+  799  ls ../
+  800  ls
+  801  ls source_documents/
+  802  deactivate
+  803  exit
+  804  cd langchain/
+  805  ls
+  806  git init
+  807  cd ..
+  808  ls
+  809  mv langchain langchain_temp
+  810  git clone git@github.com:praneethchandra/langchain.git
+  811  cd langchain
+  812  mv ../langchain_temp/* .
+  813  rm ../langchain_temp
+  814  ls
+  815  rm -r ../langchain_temp
+  816  ls
+  817  cd proj1/
+  818  source ./venv/bin/activate
+  819  python -m pip freeze > requirements.txt
+  820  python3 -m pip freeze > requirements.txt
+  821  ls
+  822  deactivate
+  823  git add llmchain.py requirements.txt
+  824  cd ..
+  825  ls
+  826  cd summ/
+  827  source ./venv/bin/activate
+  828  python3 -m pip freeze > requirements.txt
+  829  ls
+  830  git add '*.py'
+  831  git add requirements.txt 
+  832  ls
+  833  git status
+  834  cd ..
+  835  git status
+  836  git commit -m "Starting sample projects using ChatGPT"
+  837  git push origin main
+  838  deactivate
+  839  exit
+  840  ls
+  841  mkdir BERT
+  842  cd BERT/
+  843  ls
+  844  mkdir QnA
+  845  cd QnA/
+  846  python3 -m venv venv
+  847  source ./venv/bin/activate
+  848  pip install cdqa
+  849  python3 -m pip install cdqa
+  850  cd ..
+  851  ls
+  852  cd ..
+  853  ls
+  854  cd huggingface/
+  855  ls
+  856  cd proj1/
+  857  ls
+  858  cd ..
+  859  ls
+  860  cd autotrain-advanced/
+  861  ls
+  862  cd ..
+  863  ls
+  864  cd proj1/
+  865  ls
+  866  deactivate
+  867  source ./venv/bin/ac
+  868  ls
+  869  rm -rf venv
+  870  python3 -m venv venv
+  871  source ./venv/bin/activate
+  872  pip install huggingface_hub
+  873  python3 -m pip install huggingface_hub
+  874  huggingface-cli login
+  875  huggingface-cli repo create local1 --type {model, dataset, space}
+  876  ls
+  877  deactivate
+  878  cd ..
+  879  ls
+  880  mkdir deeplearn
+  881  cd deeplearn/
+  882  mkdir proj1
+  883  cd proj1/
+  884  python3 -m venv venv
+  885  source ./venv/bin/activate
+  886  python3 -m pip install scipy
+  887  python3 -m pip install matplotlib pandas sklearn statsmodels
+  888  python3 versions.py
+  889  python3 -m pip install sklearn
+  890  python3 versions.py
+  891  python3 -m pip install scikit-learn
+  892  python3 versions.py
+  893  python3 -m pip install theano
+  894  python3 -m pip install keras
+  895  python3 -m pip install tensorflow
+  896  python3 deep_versions.py 
+  897  python3 first_nn.py 
+  898  python3 -m pip install pandas
+  899  deactivate
+  900  exit
+  901  ls
+  902  cd streamlit/
+  903  ls
+  904  cd streamlit-gpt/
+  905  ls
+  906  source ./venv/bin/activate
+  907  python -m streamlit run app.py 
+  908  ls
+  909  deactivate
+  910  exit
+  911  ls
+  912  sudo vim /etc/wsl.conf
+  913  exit
+  914  mkdir casaos
+  915  cd casaos/
+  916  curl -fsSL get.casaos.io/install.sh | sudo bash
+  917  ifconfig
+  918  exit
+  919  ifconfig
+  920  netsh interface portproxy add v4tov4 listenport=4000 listenaddress=0.0.0.0 connectport=4000 connectaddress=192.168.1.27
+  921  exit
+  922  cat /proc/sys/vm/max_map_count 
+  923  sudo vim /etc/sysctl.conf 
+  924  sudo sysctl -p
+  925  java
+  926  java -version
+  927  sudo rpm --import https://artifacts.opensearch.org/publickeys/opensearch.pgp
+  928  exit
+  929  sudo apt-get update && sudo apt-get -y install lsb-release ca-certificates curl gnupg2
+  930  sudo apt-get update
+  931  echo "deb [signed-by=/usr/share/keyrings/opensearch-keyring] https://artifacts.opensearch.org/releases/bundle/opensearch/2.x/apt stable main" | sudo tee /etc/apt/sources.list.d/opensearch-2.x.list
+  932  sudo apt-get update
+  933  sudo apt list -a opensearch
+  934  sudo apt-get install opensearch
+  935  opensearch
+  936  exit
+  937  ls
+  938  cd py/
+  939  ls
+  940  cd py_exercises/
+  941  git status
+  942  ls
+  943  source ./venv/bin/activate
+  944  python -m pip freeze > reqs.txt
+  945  ls
+  946  rm reqs.txt 
+  947  ls
+  948  mv requirements1.txt requirements.txt 
+  949  ls
+  950  git status
+  951  history | tee commands.txt
